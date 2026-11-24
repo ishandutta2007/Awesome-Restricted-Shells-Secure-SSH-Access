@@ -6,7 +6,7 @@
 
 <p align="left">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Restricted-Shells-Secure-SSH-Access/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Restricted-Shells-Secure-SSH-Access?style=flat-square&logo=github&color=gold" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Restricted-Shells-Secure-SSH-Access/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Restricted-Shells-Secure-SSH-Access?style=flat-square&logo=github&color=gold" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Restricted-Shells-Secure-SSH-Access/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Restricted-Shells-Secure-SSH-Access?style=flat-square&logo=github&color=blue" alt="GitHub Forks" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Restricted-Shells-Secure-SSH-Access/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License: MIT" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Restricted-Shells-Secure-SSH-Access/pulse"><img src="https://img.shields.io/badge/Maintained%3F-yes-brightgreen.svg?style=flat-square" alt="Maintained" /></a>
@@ -60,9 +60,9 @@ The following table benchmarks category-leading hosted Privileged Access Managem
 
 ## 💻 Open-Source GitHub Projects
 
-The open-source community provides outstanding tooling for building self-hosted SSH jump hosts, restricted jail shells, session loggers, and certificate authorities. Repositories below are **sorted descending by GitHub Star Count** with direct links to their stargazers page.
+The open-source community provides outstanding tooling for building self-hosted SSH jump hosts, restricted jail shells, session loggers, and certificate authorities. Repositories below are **sorted descending by GitHub Stars_Count** with direct links to their stargazers page.
 
-| 🌟 Repository & Star Badge | 🛠️ Category | ⚙️ Language / Stack | 📝 Description |
+| 🌟 Repository & Stars_Badge | 🛠️ Category | ⚙️ Language / Stack | 📝 Description |
 | :--- | :--- | :--- | :--- |
 | **[fatedier/frp](https://github.com/fatedier/frp)** <br> <a href="https://github.com/fatedier/frp/stargazers"><img src="https://img.shields.io/github/stars/fatedier/frp?style=social&color=white" alt="frp stars" /></a> | Reverse Proxy & Bastion Tunnel | Go | High-performance reverse proxy that securely exposes local servers, SSH nodes, and internal services behind NATs/firewalls to the internet with TLS encryption. |
 | **[jumpserver/jumpserver](https://github.com/jumpserver/jumpserver)** <br> <a href="https://github.com/jumpserver/jumpserver/stargazers"><img src="https://img.shields.io/github/stars/jumpserver/jumpserver?style=social&color=white" alt="JumpServer stars" /></a> | Open-Source PAM Bastion | Python / Vue | World's leading open-source Privileged Access Management (PAM) system; provides HTML5 web terminal, multi-factor authentication, granular command allowlists/denylists, and full session replay. |
@@ -115,7 +115,7 @@ Contributions, updates, and corrections are always welcome!
 
 1. 🍴 **Fork the repository** on GitHub.
 2. 🌿 **Create a feature branch:** `git checkout -b feature/add-new-ssh-tool`
-3. ✏️ **Update `README.md`:** Ensure SaaS platforms include precise tier pricing and company scale; ensure open-source projects include official links, star badges, and concise architectural descriptions.
+3. ✏️ **Update `README.md`:** Ensure SaaS platforms include precise tier pricing and company scale; ensure open-source projects include official links, Stars_Badges, and concise architectural descriptions.
 4. 🧪 **Check Markdown syntax & links:** Verify all URLs, badge endpoints, and tables render properly.
 5. 🚀 **Submit a Pull Request** with a brief summary of what was added or updated.
 
