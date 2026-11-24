@@ -10,6 +10,7 @@
   <a href="https://github.com/ishandutta2007/Awesome-Restricted-Shells-Secure-SSH-Access/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Restricted-Shells-Secure-SSH-Access?style=flat-square&logo=github&color=blue" alt="GitHub Forks" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Restricted-Shells-Secure-SSH-Access/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License: MIT" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Restricted-Shells-Secure-SSH-Access/pulse"><img src="https://img.shields.io/badge/Maintained%3F-yes-brightgreen.svg?style=flat-square" alt="Maintained" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 </p>
 
 > 🚀 **A curated, production-tested directory of enterprise SaaS solutions and open-source GitHub projects for Restricted Shells, SSH Bastions, Zero-Trust Privileged Access Management (PAM), Ephemeral Certificate Authorities, and Terminal Session Auditing.**
@@ -22,6 +23,8 @@
 - [💻 Open-Source GitHub Projects](#-open-source-github-projects)
 - [🧱 Architectural Blueprints & Hardening](#-architectural-blueprints--hardening)
 - [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support](#-support)
+- [⭐ Star History](#-star-history)
 - [⚠️ Security Disclaimer](#️-security-disclaimer)
 
 ---
@@ -115,6 +118,24 @@ Contributions, updates, and corrections are always welcome!
 3. ✏️ **Update `README.md`:** Ensure SaaS platforms include precise tier pricing and company scale; ensure open-source projects include official links, star badges, and concise architectural descriptions.
 4. 🧪 **Check Markdown syntax & links:** Verify all URLs, badge endpoints, and tables render properly.
 5. 🚀 **Submit a Pull Request** with a brief summary of what was added or updated.
+
+---
+
+## 💖 Support
+
+Thank you so much for exploring this curated repository! If you find this directory helpful for your infrastructure, security research, or homelab setup, please consider supporting the project:
+
+- ⭐ **Star this repository** to help other engineers discover it.
+- 🍴 **Fork and contribute** by adding new tools, updates, or benchmarks.
+- 📢 **Share with your team** or across your DevSecOps communities.
+- ☕ **Buy me a coffee / Sponsor:** Support ongoing maintenance and open-source curation via the [GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007).
+
+---
+
+## ⭐ Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Restricted-Shells-Secure-SSH-Access&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Restricted-Shells-Secure-SSH-Access&type=date&legend=top-left)
+[![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Awesome-Restricted-Shells-Secure-SSH-Access&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-Restricted-Shells-Secure-SSH-Access&type=date&legend=top-left)
 
 ---
 
