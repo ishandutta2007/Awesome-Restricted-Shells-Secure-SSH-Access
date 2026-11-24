@@ -1,0 +1,206 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="360" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#0d1829" />
+      <stop offset="100%" stop-color="#050a14" />
+    </linearGradient>
+
+    <!-- Glowing Border Gradient -->
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#818cf8" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#c084fc" stop-opacity="0.8" />
+    </linearGradient>
+
+    <!-- Accent Gradients -->
+    <linearGradient id="cyanPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#818cf8" />
+    </linearGradient>
+
+    <linearGradient id="badgeGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0.4" />
+    </linearGradient>
+
+    <!-- Subtle Grid Pattern -->
+    <pattern id="cyberGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.8" stroke-opacity="0.5" />
+      <circle cx="40" cy="40" r="1.5" fill="#38bdf8" fill-opacity="0.3" />
+    </pattern>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    .title-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 800;
+      font-size: 38px;
+      fill: #ffffff;
+      letter-spacing: -0.5px;
+    }
+    .subtitle-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      fill: #94a3b8;
+    }
+    .code-term {
+      font-family: 'SF Mono', Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+      font-size: 13px;
+      fill: #38bdf8;
+    }
+    .pill-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-weight: 600;
+      font-size: 12px;
+      fill: #e2e8f0;
+    }
+
+    /* Ambient pulse animations in background ONLY */
+    @keyframes pulseOrb {
+      0%, 100% { transform: scale(1); opacity: 0.25; }
+      50% { transform: scale(1.15); opacity: 0.45; }
+    }
+    @keyframes floatParticle {
+      0% { transform: translateY(0px) translateX(0px); opacity: 0.2; }
+      50% { transform: translateY(-20px) translateX(10px); opacity: 0.7; }
+      100% { transform: translateY(0px) translateX(0px); opacity: 0.2; }
+    }
+    @keyframes streamBeam {
+      0% { stroke-dashoffset: 400; }
+      100% { stroke-dashoffset: 0; }
+    }
+    @keyframes lockShieldGlow {
+      0%, 100% { filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.4)); }
+      50% { filter: drop-shadow(0 0 18px rgba(129, 140, 248, 0.8)); }
+    }
+
+    .bg-orb-1 {
+      transform-origin: 200px 100px;
+      animation: pulseOrb 8s ease-in-out infinite;
+    }
+    .bg-orb-2 {
+      transform-origin: 1000px 250px;
+      animation: pulseOrb 10s ease-in-out infinite 2s;
+    }
+    .particle-1 { animation: floatParticle 6s ease-in-out infinite; }
+    .particle-2 { animation: floatParticle 8s ease-in-out infinite 1.5s; }
+    .particle-3 { animation: floatParticle 7s ease-in-out infinite 3s; }
+    .beam-line {
+      stroke-dasharray: 80, 120;
+      animation: streamBeam 5s linear infinite;
+    }
+    .shield-badge {
+      animation: lockShieldGlow 4s ease-in-out infinite;
+    }
+  </style>
+
+  <!-- Deep Background Layer -->
+  <rect width="1200" height="360" rx="16" fill="url(#bgGrad)" />
+  <rect width="1200" height="360" rx="16" fill="url(#cyberGrid)" />
+
+  <!-- Animated Background Glow Orbs (Strictly Background) -->
+  <g opacity="0.35">
+    <circle class="bg-orb-1" cx="220" cy="90" r="180" fill="#0284c7" filter="url(#glow)" />
+    <circle class="bg-orb-2" cx="1020" cy="240" r="210" fill="#6366f1" filter="url(#glow)" />
+  </g>
+
+  <!-- Animated Data Flow Beams (Background Behind Cards) -->
+  <g opacity="0.4" stroke-width="1.5">
+    <path class="beam-line" d="M 60 70 Q 300 20 600 70 T 1140 70" fill="none" stroke="#38bdf8" />
+    <path class="beam-line" d="M 60 290 Q 400 340 700 290 T 1140 290" fill="none" stroke="#818cf8" style="animation-duration: 7s;" />
+  </g>
+
+  <!-- Floating Particles in Background -->
+  <g fill="#38bdf8">
+    <circle class="particle-1" cx="140" cy="120" r="2.5" />
+    <circle class="particle-2" cx="380" cy="60" r="2" />
+    <circle class="particle-3" cx="820" cy="90" r="3" />
+    <circle class="particle-1" cx="1060" cy="140" r="2" />
+    <circle class="particle-2" cx="950" cy="310" r="2.5" />
+    <circle class="particle-3" cx="260" cy="300" r="2" />
+  </g>
+
+  <!-- Outer Border Frame with Gradient Glow -->
+  <rect x="1.5" y="1.5" width="1197" height="357" rx="15" fill="none" stroke="url(#borderGrad)" stroke-width="2" />
+
+  <!-- FOREGROUND CONTENT: Clean, Pristine, High Contrast, Fully Legible -->
+
+  <!-- Top Category Chip / Tag -->
+  <g transform="translate(60, 42)">
+    <rect width="250" height="32" rx="16" fill="#0f172a" stroke="#38bdf8" stroke-width="1.2" />
+    <circle cx="18" cy="16" r="5" fill="#10b981" />
+    <text x="32" y="21" class="code-term" font-weight="600" fill="#38bdf8">ZERO-TRUST ARCHITECTURE</text>
+  </g>
+
+  <!-- Terminal Session Simulation Pill -->
+  <g transform="translate(930, 42)">
+    <rect width="210" height="32" rx="16" fill="#0f172a" stroke="#475569" stroke-width="1.2" />
+    <text x="16" y="21" class="code-term" fill="#a7f3d0">ssh -p 22 admin@bastion</text>
+  </g>
+
+  <!-- Shield Icon Graphic -->
+  <g class="shield-badge" transform="translate(60, 95)">
+    <rect width="70" height="70" rx="18" fill="url(#cyanPurple)" />
+    <!-- SVG Shield Lock Icon -->
+    <path d="M 35 15 L 20 22 C 20 37 26 48 35 55 C 44 48 50 37 50 22 Z" fill="#0a0f1d" />
+    <rect x="30" y="32" width="10" height="9" rx="2" fill="#38bdf8" />
+    <path d="M 32 32 L 32 28 C 32 26 38 26 38 28 L 38 32" fill="none" stroke="#38bdf8" stroke-width="2" />
+  </g>
+
+  <!-- Main Title -->
+  <text x="146" y="132" class="title-text">Awesome Restricted Shells &amp; Secure SSH Access</text>
+  <text x="148" y="158" class="subtitle-text">Curated Production Ecosystem • Bastion Gateways • Zero-Trust PAM • Ephemeral SSH CAs • Audit Logging</text>
+
+  <!-- Terminal Command Prompt Mockup Box (Crisp Foreground) -->
+  <g transform="translate(60, 186)">
+    <rect width="1080" height="64" rx="10" fill="#020617" stroke="#1e293b" stroke-width="1.5" />
+    <!-- Window Dots -->
+    <circle cx="24" cy="32" r="5" fill="#ef4444" />
+    <circle cx="40" cy="32" r="5" fill="#f59e0b" />
+    <circle cx="56" cy="32" r="5" fill="#10b981" />
+    <line x1="74" y1="16" x2="74" y2="48" stroke="#334155" stroke-width="1" />
+    <!-- Command Text -->
+    <text x="92" y="37" class="code-term" fill="#94a3b8">$ <tspan fill="#38bdf8">tsh</tspan> login --auth=github &amp;&amp; <tspan fill="#818cf8">ssh</tspan> bastion-gw <tspan fill="#64748b"># Enforcing short-lived certs, chroot sandbox &amp; audit trails</tspan></text>
+  </g>
+
+  <!-- Bottom Feature Badges / Metadata Cards -->
+  <g transform="translate(60, 270)">
+    <!-- Pill 1: Ephemeral SSH Certificates -->
+    <g transform="translate(0, 0)">
+      <rect width="245" height="42" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1.2" />
+      <text x="16" y="26" class="pill-text">🔑 Ephemeral SSH Certificates</text>
+    </g>
+
+    <!-- Pill 2: Bastions & Jump Hosts -->
+    <g transform="translate(260, 0)">
+      <rect width="220" height="42" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1.2" />
+      <text x="16" y="26" class="pill-text">🛡️ Bastion &amp; Jump Hosts</text>
+    </g>
+
+    <!-- Pill 3: Restricted Shells & Jails -->
+    <g transform="translate(495, 0)">
+      <rect width="235" height="42" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1.2" />
+      <text x="16" y="26" class="pill-text">🔒 Restricted Shells &amp; Jails</text>
+    </g>
+
+    <!-- Pill 4: Session Recording & Audits -->
+    <g transform="translate(745, 0)">
+      <rect width="225" height="42" rx="8" fill="#0f172a" stroke="#334155" stroke-width="1.2" />
+      <text x="16" y="26" class="pill-text">📹 Session Recording &amp; Audit</text>
+    </g>
+
+    <!-- Pill 5: Zero-Trust PAM -->
+    <g transform="translate(985, 0)">
+      <rect width="95" height="42" rx="8" fill="#0f172a" stroke="#38bdf8" stroke-width="1.2" />
+      <text x="14" y="26" class="pill-text" fill="#38bdf8">✨ PAM</text>
+    </g>
+  </g>
+</svg>
